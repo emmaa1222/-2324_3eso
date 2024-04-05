@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+  <!-- cabecera del documento -->
+  <head>
+    <meta charset="utf-8">
+    <!-- título -->
+	<title>Formulario</title>
+  </head>
+  <!-- cuerpo del documento -->
+  <body>
+    <form action="procesar-datos.php" method="post">
+      <fieldset>
+	  <!-- primer cuadrado-->
+        <legend>Agrupación de varios controles:</legend>
+        Escriba el nombre:
+        <br>
+        <input type="text" name="nombre">
+        <br>
+        Grupo:
+        <br>
+        <select name="lista_de_seleccion">
+          <option value="opcion1">3ºC</option>
+          <option value="opcion2">3ºD</option>
+          <option value="opcion3">3ºA</option>
+          <option value="opcion4">3ºB</option>
+        </select>
+        <br>
+        Describa la incidencia:
+        <br>
+        <textarea name="area_de_texto" rows="4" cols="50">Descríbalo aquí.</textarea>
+        <br>
+      Contraseña:
+      <br>
+      <input type="password" name="clave">
+      <br><br>
+      </fieldset>
+      <fieldset>
+	  <!-- segundo cuadrado-- -->
+        <legend>Agrupación de botones:</legend>
+		<!-- opciones -->
+        <button type="reset">Resetear</button>
+        <button type="submit">Enviar</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
